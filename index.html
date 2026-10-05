@@ -1,1 +1,60 @@
-<p> This is a new repo.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator — Laiba Aftab</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="page">
+    <p class="eyebrow">Python Project · laibapaftab-debug</p>
+    <h1>A calculator, rebuilt for the browser</h1>
+    <p class="intro">
+      I started this as a command-line script while learning Python.
+      This version is the same logic, rebuilt as a working web app.
+    </p>
+
+    <div class="calculator" id="calculator">
+      <div class="display">
+        <div class="display-expression" id="expression"></div>
+        <div class="display-value" id="display">0</div>
+      </div>
+
+      <div class="keys">
+        <button class="key key-fn" data-action="clear">C</button>
+        <button class="key key-fn" data-action="sign">±</button>
+        <button class="key key-fn" data-action="percent">%</button>
+        <button class="key key-op" data-action="divide">÷</button>
+
+        <button class="key key-num" data-num="7">7</button>
+        <button class="key key-num" data-num="8">8</button>
+        <button class="key key-num" data-num="9">9</button>
+        <button class="key key-op" data-action="multiply">×</button>
+
+        <button class="key key-num" data-num="4">4</button>
+        <button class="key key-num" data-num="5">5</button>
+        <button class="key key-num" data-num="6">6</button>
+        <button class="key key-op" data-action="subtract">−</button>
+
+        <button class="key key-num" data-num="1">1</button>
+        <button class="key key-num" data-num="2">2</button>
+        <button class="key key-num" data-num="3">3</button>
+        <button class="key key-op" data-action="add">+</button>
+
+        <button class="key key-num key-zero" data-num="0">0</button>
+        <button class="key key-num" data-action="decimal">.</button>
+        <button class="key key-equals" data-action="equals">=</button>
+      </div>
+    </div>
+
+    <p class="footnote">
+      Built with plain HTML, CSS and JavaScript — no libraries.
+      <a href="calculator.py">View the original Python script →</a>
+    </p>
+  </main>
+
+<script src="script.js"></script>
+</body>
+</html>
