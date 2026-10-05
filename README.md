@@ -17,7 +17,7 @@ To run the command-line version:
 ```bash
 python calculator.py
 ```
-
+  
 ## What I learned
 
 Building this project helped me practice:
