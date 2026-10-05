@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@500;600&display=swap');
+
+:root {
+  --bg: #EEF1F6;
+  --ink: #1C1F27;
+  --muted: #5B6270;
+  --body-case: #2B2F3A;
+  --body-case-dark: #22252E;
+  --screen: #1C1F27;
+  --screen-text: #8FE3C3;
+  --screen-text-dim: #5C7E72;
+  --key-num: #3A3F4C;
+  --key-num-text: #E4E7ED;
+  --key-fn: #4A4F5E;
+  --key-fn-text: #C7CBD4;
+  --key-op: #F2A154;
+  --key-op-text: #241705;
+  --key-equals: #5B8DEF;
+  --key-equals-text: #FFFFFF;
+  --radius: 14px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+
+.page {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 64px 24px 48px;
+  text-align: center;
+}
+
+.eyebrow {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0 0 14px;
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0 0 14px;
+}
+
+.intro {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0 0 36px;
+}
+
+/* Calculator body */
+.calculator {
+  background: linear-gradient(180deg, var(--body-case) 0%, var(--body-case-dark) 100%);
+  border-radius: 24px;
+  padding: 20px;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.06) inset,
+    0 20px 40px -16px rgba(20, 22, 30, 0.45);
+}
+
+.display {
+  background: var(--screen);
+  border-radius: var(--radius);
+  padding: 22px 18px 16px;
+  margin-bottom: 16px;
+  text-align: right;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.35) inset;
+}
+
+.display-expression {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  color: var(--screen-text-dim);
+  min-height: 16px;
+  margin-bottom: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.display-value {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 38px;
+  font-weight: 600;
+  color: var(--screen-text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.key {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  padding: 16px 0;
+  cursor: pointer;
+  transition: transform 0.08s ease, filter 0.12s ease;
+}
+
+.key:active {
+  transform: scale(0.95);
+}
+
+.key-num {
+  background: var(--key-num);
+  color: var(--key-num-text);
+}
+
+.key-fn {
+  background: var(--key-fn);
+  color: var(--key-fn-text);
+}
+
+.key-op {
+  background: var(--key-op);
+  color: var(--key-op-text);
+}
+
+.key-equals {
+  background: var(--key-equals);
+  color: var(--key-equals-text);
+  grid-column: span 2;
+}
+
+.key-zero {
+  grid-column: span 2;
+}
+
+.key:hover {
+  filter: brightness(1.1);
+}
+
+.footnote {
+  margin-top: 28px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.footnote a {
+  color: var(--key-equals);
+  text-decoration: none;
+}
+
+.footnote a:hover {
+  text-decoration: underline;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .key { transition: none; }
+}
