@@ -30,9 +30,13 @@ Building this project helped me practice:
 ### Desktop
 
 <img width="1542" height="769" alt="Screenshot 2026-10-05 155845" src="https://github.com/user-attachments/assets/159566ea-a738-44fe-8d93-d495762df5cf" />
+
  ### Tablet
+ 
  <img width="966" height="701" alt="Screenshot 2026-10-05 160421" src="https://github.com/user-attachments/assets/7cb2e1be-1682-44ab-8b19-5dad51e3d5d0" />
+ 
 ### Mobile
+
  <img width="616" height="1280" alt="WhatsApp Image 2026-10-05 at 4 16 58 AM (1)" src="https://github.com/user-attachments/assets/39c1898c-edf6-4599-a4c3-2f63aacf5dea" />
 
 ## Code Practice
