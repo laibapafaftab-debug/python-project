@@ -26,7 +26,5 @@ Building this project helped me practice:
 - Rebuilding the same logic across two different environments (terminal and browser)
 - Using Git and GitHub for version control
 
-## License
 
-MIT — see [LICENSE](LICENSE).
 <img width="1591" height="862" alt="image" src="https://github.com/user-attachments/assets/13d07941-e1d8-45dc-bf47-02cf5c0671ef" />
